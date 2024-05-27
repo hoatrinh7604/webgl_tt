@@ -30,7 +30,7 @@
     }
     updateBannerVisibility();
   }
-window.alert("HaHa");
+window.alert("HaHa 1111");
   var buildUrl = "Build";
   var loaderUrl = buildUrl + "/WebGL.loader.js";
   var config = {
@@ -96,8 +96,13 @@ window.alert("HaHa");
   
   function Resize()
   {
-	  var meta = document.createElement('meta');
+	let meta = document.getElementsByName('meta');
+	window.alert("HaHa22");
+	if(meta != null)
+	{
+		window.alert("HaHa23");
     meta.name = 'viewport';
     meta.content = 'width=device-width, initial-scale=1.0, user-scalable=0, shrink-to-fit=no, interactive-widget=resizes-content';
     document.getElementsByTagName('head')[0].appendChild(meta);
+	}
   }
