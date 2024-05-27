@@ -6,7 +6,7 @@
   var loadingBar = document.querySelector("#unity-loading-bar");
   var progressBarFull = document.querySelector("#unity-progress-bar-full");
   var warningBanner = document.querySelector("#unity-warning");
-window.alert("H11");
+window.alert("H1110");
   // Shows a temporary message banner/ribbon for a few seconds, or
   // a permanent error message on top of the canvas if type=='error'.
   // If type=='warning', a yellow highlight color is used.
@@ -42,8 +42,7 @@ window.alert("H11");
     productName: "TON-UNITY",
     productVersion: "0.1",
     showBanner: unityShowBanner,
-	
-   cacheControl: function (url) {
+	cacheControl: function (url) {
      // Caching enabled for .data and .bundle files.
      // Revalidate if file is up to date before loading from cache
      // if (url.match(/\.data/) || url.match(/\.bundle/)) {
