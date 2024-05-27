@@ -72,7 +72,7 @@ window.alert("H1111");
     // Mobile device style: fill the whole browser client area with the game canvas:
     var meta = document.createElement('meta');
     meta.name = 'viewport';
-    meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+    meta.content = 'width=device-width, initial-scale=1.0, interactive-widget=resizes-content';
     document.getElementsByTagName('head')[0].appendChild(meta);
   }
 
