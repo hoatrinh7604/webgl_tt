@@ -103,6 +103,5 @@ window.alert("HaHa 1111");
 		window.alert("HaHa23");
     meta.name = 'viewport';
     meta.content = 'width=device-width, initial-scale=1.0, user-scalable=0, shrink-to-fit=no, interactive-widget=resizes-content';
-    document.getElementsByTagName('head')[0].appendChild(meta);
 	}
   }
