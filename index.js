@@ -42,7 +42,7 @@ window.alert("H11");
     productName: "TON-UNITY",
     productVersion: "0.1",
     showBanner: unityShowBanner,
-	#if USE_DATA_CACHING
+	
    cacheControl: function (url) {
      // Caching enabled for .data and .bundle files.
      // Revalidate if file is up to date before loading from cache
@@ -60,7 +60,6 @@ window.alert("H11");
      // Note: the default browser cache may cache them anyway.
      return "no-store";
    },
-#endif
   };
 
   // By default Unity keeps WebGL canvas render target size matched with
