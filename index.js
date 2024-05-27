@@ -10,7 +10,7 @@ window.addEventListener("load", function () {
   var loadingBar = document.querySelector("#unity-loading-bar");
   var progressBarFull = document.querySelector("#unity-progress-bar-full");
   var warningBanner = document.querySelector("#unity-warning");
-alert("Hello!");
+alert("Hello 1!");
   // Shows a temporary message banner/ribbon for a few seconds, or
   // a permanent error message on top of the canvas if type=='error'.
   // If type=='warning', a yellow highlight color is used.
@@ -62,6 +62,11 @@ alert("Hello!");
     meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
     document.getElementsByTagName('head')[0].appendChild(meta);
   }
+
+addEventListener("load", function() {
+    meta.name = 'viewport';
+    meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+})
 
   loadingBar.style.display = "block";
 
