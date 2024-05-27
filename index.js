@@ -63,7 +63,7 @@ alert("Hello 1!");
     document.getElementsByTagName('head')[0].appendChild(meta);
   }
 
-addEventListener("load", function() {
+window.addEventListener("load", function() {
     meta.name = 'viewport';
     meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
 })
