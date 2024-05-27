@@ -6,7 +6,7 @@
   var loadingBar = document.querySelector("#unity-loading-bar");
   var progressBarFull = document.querySelector("#unity-progress-bar-full");
   var warningBanner = document.querySelector("#unity-warning");
-
+window.alert("Hkakaka");
   // Shows a temporary message banner/ribbon for a few seconds, or
   // a permanent error message on top of the canvas if type=='error'.
   // If type=='warning', a yellow highlight color is used.
@@ -30,7 +30,7 @@
     }
     updateBannerVisibility();
   }
-window.alert("HaHa 1111");
+
   var buildUrl = "Build";
   var loaderUrl = buildUrl + "/WebGL.loader.js";
   var config = {
@@ -75,8 +75,6 @@ window.alert("HaHa 1111");
     meta.content = 'width=device-width, initial-scale=1.0, user-scalable=0, shrink-to-fit=no, interactive-widget=resizes-content';
     document.getElementsByTagName('head')[0].appendChild(meta);
   }
-  
-  window.addEventListener ('resize', Resize());
 
   loadingBar.style.display = "block";
 
@@ -93,15 +91,3 @@ window.alert("HaHa 1111");
     });
   };
   document.body.appendChild(script);
-  
-  function Resize()
-  {
-	let meta = document.getElementsByName('meta');
-	window.alert("HaHa22");
-	if(meta != null)
-	{
-		window.alert("HaHa23");
-    meta.name = 'viewport';
-    meta.content = 'width=device-width, initial-scale=1.0, user-scalable=0, shrink-to-fit=no, interactive-widget=resizes-content';
-	}
-  }
