@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+	<script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Sample</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <link rel="manifest" href="manifest.webmanifest">
+	
   </head>
   <body>
+	<div id="ton-connect"></div>
+    <script>
+      const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
+          manifestUrl: 'https://<YOUR_APP_URL>/tonconnect-manifest.json',
+          buttonRootId: 'ton-connect'
+      });
+  </script>
     <div id="unity-container">
       <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
