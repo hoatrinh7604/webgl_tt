@@ -1,13 +1,13 @@
 {
-    "name": "AAO",
-    "short_name": "AAO",
+    "name": "Sample",
+    "short_name": "Sample",
     "start_url": "index.html",
     "display": "fullscreen",
-    "background_color": "#FFFFFF",
-    "theme_color": "#fff",
-    "description": "AAO",
+    "background_color": "#231F20",
+    "theme_color": "#000",
+    "description": "",
     "icons": [{
-      "src": "TemplateData/icons/unity-logo-light.png",
+      "src": "TemplateData/icons/unity-logo-dark.png",
       "sizes": "144x144",
       "type": "image/png",
       "purpose": "any maskable"

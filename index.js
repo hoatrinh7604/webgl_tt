@@ -1,4 +1,8 @@
-
+// window.addEventListener("load", function () {
+    // if ("serviceWorker" in navigator) {
+      // navigator.serviceWorker.register("ServiceWorker.js");
+    // }
+  // });
   var unityInstanceRef;
   var unsubscribe;
   var container = document.querySelector("#unity-container");
@@ -6,7 +10,7 @@
   var loadingBar = document.querySelector("#unity-loading-bar");
   var progressBarFull = document.querySelector("#unity-progress-bar-full");
   var warningBanner = document.querySelector("#unity-warning");
-//window.alert("AAO!!!");
+
   // Shows a temporary message banner/ribbon for a few seconds, or
   // a permanent error message on top of the canvas if type=='error'.
   // If type=='warning', a yellow highlight color is used.
@@ -39,24 +43,10 @@
     codeUrl: buildUrl + "/WebGL.wasm.unityweb",
     streamingAssetsUrl: "StreamingAssets",
     companyName: "DefaultCompany",
-    productName: "TON-UNITY",
+    productName: "Sample",
     productVersion: "0.1",
     showBanner: unityShowBanner,
 	cacheControl: function (url) {
-     // Caching enabled for .data and .bundle files.
-     // Revalidate if file is up to date before loading from cache
-     // if (url.match(/\.data/) || url.match(/\.bundle/)) {
-         // return "must-revalidate";
-     // }
-
-     // Caching enabled for .mp4 and .custom files
-     // Load file from cache without revalidation.
-     // if (url.match(/\.mp4/) || url.match(/\.custom/)) {
-         // return "immutable";
-     // }
- 
-     // Disable explicit caching for all other files.
-     // Note: the default browser cache may cache them anyway.
      return "no-store";
    },
   };
@@ -72,7 +62,7 @@
     // Mobile device style: fill the whole browser client area with the game canvas:
     var meta = document.createElement('meta');
     meta.name = 'viewport';
-    meta.content = 'width=device-width, initial-scale=1.0, user-scalable=0, shrink-to-fit=no, interactive-widget=resizes-content';
+    meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
     document.getElementsByTagName('head')[0].appendChild(meta);
   }
 
