@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "961323715147",
+    "project_id": "cat-battle-airdrop",
+    "storage_bucket": "cat-battle-airdrop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:961323715147:android:7dc57d6f45801a4c3c9bce",
+        "android_client_info": {
+          "package_name": "com.cat.battle.airdrop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnTOoQ1Yuh-rpJoEk6YgRl5tDdQRTbW_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
